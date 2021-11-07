@@ -1,0 +1,37 @@
+{
+  "name": "gitvern",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Gitvern GitHub App",
+  "author": "prc <prcolaco@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/gitvern/github-app",
+  "keywords": [
+    "gitvern",
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "start": "probot run ./index.js",
+    "dev": "nodemon --exec 'npm start'",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "ethers": "^5.5.1",
+    "probot": "^11.0.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nock": "^13.0.5",
+    "nodemon": "^2.0.14",
+    "smee-client": "^1.2.2"
+  },
+  "engines": {
+    "node": ">= 10.13.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
